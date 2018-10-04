@@ -35,6 +35,10 @@ const userSchema = new Schema({
     motherName: nameSchema,
     contact: contactSchema,
     dob: Date,
+    role: {
+        type: String,
+        default: "END-USER"
+    },
     auth: authSchema,
     address: [addressSchema],
     create_on: {
